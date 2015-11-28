@@ -1,0 +1,166 @@
+h1{
+  font: Georgia, Times New Roman, serif;
+}
+
+body{ 
+  font: 15px Arial, sans-serif;
+}  
+
+.divform{
+  display:table;
+  border-collapse:collapse
+}
+
+.divform .t{
+  display:table-cell;
+  padding:5px 0px;
+  vertical-align:middle
+}
+
+input[type="text"], input[type="password"], select, label{
+  height:30px;
+  
+}
+
+input[type="text"], input[type="password"], select, textarea, .divform, .divform .t, form{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box
+}
+
+.divform, .divform .t{
+  display:block
+}
+   
+.divform .t{
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+   
+input[type="submit"]{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ 
+input[type="text"], input[type="password"]{
+    width:100%;
+}
+
+/* LARGE SCREEN SIZE */
+
+@media only screen and (min-width:1025px){
+  
+  h1{
+  font: Georgia, Times New Roman, serif;
+  }
+
+  body{ 
+    font:normal 16px Arial, sans-serif
+  }
+  
+  .divform, .divform .t{
+    display:block
+  }
+   
+  .divform .t{
+    width:50%;
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+  }
+   
+  input[type="submit"]{
+    padding-left:20px;
+    padding-right:20px;
+  }
+ 
+  input[type="text"], input[type="password"]{
+    width: 80%;
+    float: none;
+  }
+  
+  label{ 
+    display: inline-block; 
+    width: 90px; 
+    text-align: left; 
+  }
+ 
+}
+
+/* MID SCREEN SIZE */
+
+@media only screen and (min-width:451px) and (max-width: 1024px){
+  
+  h1{
+  font: Georgia, Times New Roman, serif;
+  }
+
+  body{ 
+    font:normal 16px Arial, sans-serif
+  }
+  
+  .divform, .divform .t{
+    display:block
+  }
+   
+  .divform .t{
+    width:50%;
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+  }
+   
+  input[type="submit"]{
+    padding-left:20px;
+    padding-right:20px
+  }
+ 
+  input[type="text"], input[type="password"]{
+    width:100%
+  }
+ 
+}
+
+/* PHONE SIZE */
+
+@media only screen and (max-width:450px) {
+  
+  h1{
+  font: Georgia, Times New Roman, serif;
+  }
+
+  label{
+    display: none;
+  }
+
+  body { 
+    font:normal 12px, Arial, sans-serif}
+  
+  h1 {
+    font: Georgia, Times New Roman, serif;
+    margin:0 0 20px 0
+  }
+  label, input[type="submit"]{
+    margin: 0;
+    text-indent: 0
+  }
+  .divform, .divform .t{
+    display:block
+  }
+
+  input[type="text"], input[type="password"], select, textarea{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align:center;
+    
+  }
+  
+  input[type="submit"]{
+    width:100%;
+    margin-top:20px;
+    
+  }
+}
